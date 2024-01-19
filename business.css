@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Nunito:300,400');
+
+body {
+  background-color: #4a4a4d;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+/* .inner-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.bizzy-card-container {
+  min-width: 200px;
+  max-width: 450px;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-wrap: wrap;
+ } */
+
+.biz-card-a {
+  width: 160px;
+  height: 220px;
+  background-color: #f2f2f2;
+  float: left;
+  padding: 10px;
+  transition: 0.2s ease;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+ }
+
+.biz-headshot {
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  background-size: 132px;   
+  background-repeat: no-repeat;
+  background-position: 50% 6%;
+  border: 1px solid #d8d8d8;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.biz-pic-drew { background-image: url('microden\ logo.png'); 
+width: 150px;
+background-color: black;
+border-radius: 100%;
+height: 130px;
+margin-top: -3px;
+}
+
+.biz-words-container { margin-top: 150px; }
+
+.biz-name {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  color: #252526;
+  font-size: 1.3rem;
+  margin-bottom: 2px;
+  margin-left: -20px;
+ }
+
+.biz-title {
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  color: #252526;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  max-width: 80px;
+  margin-left: 20px;
+ }
+
+
+
+.biz-card-b {
+  width: 230px;
+  height: 220px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  transition: 0.2s ease;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+ }
+
+.biz-shape {
+  float:right;
+  background: #ff4d79;
+  background: -webkit-linear-gradient(-45deg, #ff4d79 0%, #ea2e6d 100%);
+  background: -ms-linear-gradient(-45deg, #ff4d79 0%, #ea2e6d 100%);
+  background: linear-gradient(135deg, #ff4d79 0%, #ea2e6d 100%);
+  transform: scaleX(1) rotate(50deg);
+  top: 0;
+  bottom: 0;
+  height: 308px;
+  margin: -25px -55px 0 0;
+  border-radius: 50px;
+  width: 100%;
+  color: #fff;
+  border: 2px solid #fff;
+ }
+
+.biz-contact-box {
+  position: absolute;	
+  margin-top: 140px;
+  margin-left: 1px;
+  width: 210px;
+  transform: scaleX(1) rotate(-50deg);
+ }
+
+.biz-email:before, 
+.biz-cell:before,
+.biz-portfolio:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  float: left;
+  margin: -7px 9px 0 5px;
+} 
+
+.biz-email:before { background: url("https://drewgoff.com/images/business-card/email.svg") no-repeat; }
+.biz-cell:before   { background: url("https://drewgoff.com/images/business-card/cellphone.svg") no-repeat; }
+.biz-portfolio:before   { background: url("https://drewgoff.com/images/business-card/suitcase.svg") no-repeat; }
+
+.biz-email, .biz-cell, 
+.biz-portfolio {
+  color: #252526;	
+  font-size: 11px; 
+  letter-spacing: 0.1rem;
+  margin-bottom: 10px;
+   cursor: pointer;
+   padding-top: 5px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  text-wrap: nowrap;
+ }
+ .biz-portfolio a{
+    margin-top: -5px;
+ }
+
+@media screen and (max-width: 470px) {
+
+.biz-card-a, .biz-card-b { margin-left: 20%; }
+
+.biz-card-a {
+  width: 240px;
+  height: 185px;
+  border-top-right-radius: 18px;
+  border-bottom-left-radius: 0;
+ }
+
+.biz-headshot { margin-top: 6px; }
+
+.biz-card-b {
+  width: 240px;
+  height: 180px;
+  border-bottom-left-radius: 18px;   
+  border-top-right-radius: 0;
+ }
+
+.biz-shape {
+  transform: scaleX(1) rotate(77deg);
+  margin: -13px -60px 0 0;
+ }
+
+.biz-contact-box { transform: scaleX(1) rotate(-77deg); }
+
+.biz-contact-box {
+  position: absolute;	
+  margin-top: 150px;
+  margin-left: -20px;
+  width: 210px;
+ }
+}
+
+@media screen and (max-width: 375px) {
+.biz-card-a, .biz-card-b { margin-left: 11%; }
+}
+
+@media screen and (max-width: 320px) {
+.biz-card-a, .biz-card-b { margin-left: 5%; }
+}
